@@ -1,2 +1,2 @@
-from module.Mobile import mobile
-from module.Phone import posts
+from .Mobile import mobile
+from .Phone import posts
