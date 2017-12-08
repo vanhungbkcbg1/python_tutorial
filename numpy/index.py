@@ -22,3 +22,12 @@ print a
 # array=[1,2,3,4,5]
 # print array
 
+x=np.array([(1,2),(3,4)])
+print 'shape of x'
+print  x.shape
+print x[0,1]
+print np.repeat(x,[1,3],1)
+
+data=np.loadtxt('data.txt')
+print data
+
