@@ -24,4 +24,7 @@ b=np.array([
     (True)
 ])
 
+print 'a'
+print a[a%3==0]
+
 print a[b]
