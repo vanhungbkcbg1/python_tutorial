@@ -1,10 +1,16 @@
-import traceback
-import logging
-def doSomething():
-    try:
-        print('hello')
-        x=10/0
+from MyException import MyException
+try:
+    raise MyException('100')
+    i=10
 
-    except Exception as err:
-        logger=logging.getLogger(__name__)
-        logger.exception(err)
+    for i in range(10):
+        if i>4:
+            continue
+        else:
+            print i
+    else:
+        print 'thoat vong for'
+except MyException as e:
+    print 'my exception'+e.value
+else:
+    print 'not run'
